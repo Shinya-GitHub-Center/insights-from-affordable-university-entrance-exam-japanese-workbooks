@@ -14,18 +14,8 @@ pubDate: "2026-08-21"
 
 | 区分 | 呼び方 | 主な用途・特徴 | Modalでの具体的な使用例 |
 | --- | --- | --- | --- |
-| **プログラム内** | **SDK**<br>
-
-<br>*(Software Development Kit)* | コード内でクラスや関数をインポートし、アプリの処理やロジック、インフラ構成を**定義・制御**する。 | `import modal`<br>
-
-<br>`@app.function()` でクラウド実行する関数を定義する。 |
-| **ターミナル上** | **CLI**<br>
-
-<br>*(Command Line Interface)* | システムに対して直接コマンドを実行し、**環境操作や管理・デプロイ**を行う。 | `modal setup`（認証）<br>
-
-<br>`modal deploy`（デプロイ）<br>
-
-<br>`modal run`（ローカル実行・テスト） |
+| **プログラム内** | **SDK** *(Software Development Kit)* | コード内でクラスや関数をインポートし、アプリの処理やロジック、インフラ構成を**定義・制御**する。 | `import modal` `@app.function()` でクラウド実行する関数を定義する。 |
+| **ターミナル上** | **CLI** *(Command Line Interface)* | システムに対して直接コマンドを実行し、**環境操作や管理・デプロイ**を行う。 | `modal setup`（認証） `modal deploy`（デプロイ） `modal run`（ローカル実行・テスト） |
 
 ---
 
@@ -278,16 +268,8 @@ Google Cloud は巨大すぎて何百ものサービス（ストレージ、デ�
 
 | 区分 | パッケージ名 | インストール場所 | 役割 |
 | --- | --- | --- | --- |
-| **CLI本体**<br>
-
-<br>*(Google Cloud SDK)* | `gcloud` ツール一式 | PCのグローバル（OS） | クラウドの操作、デプロイ、**認証（ADC）の管理**を行う基本ツール。 |
-| **Python SDK**<br>
-
-<br>*(個別ライブラリ)* | `google-cloud-storage`<br>
-
-<br>`google-cloud-firestore`<br>
-
-<br>`google-genai` など | 各アプリの仮想環境 (`venv`) | アプリで**実際に使うサービス（機能）のPythonライブラリだけ**を最小限 `pip install` する。 |
+| **CLI本体** *(Google Cloud SDK)* | `gcloud` ツール一式 | PCのグローバル（OS） | クラウドの操作、デプロイ、**認証（ADC）の管理**を行う基本ツール。 |
+| **Python SDK** *(個別ライブラリ)* | `google-cloud-storage` `google-cloud-firestore` `google-genai` など | 各アプリの仮想環境 (`venv`) | アプリで**実際に使うサービス（機能）のPythonライブラリだけ**を最小限 `pip install` する。 |
 
 ---
 
